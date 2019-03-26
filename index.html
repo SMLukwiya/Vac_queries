@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <<link rel="stylesheet" href="bootstrap.css">>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="functions.js" type="text/javascript"></script>
+    <script src="styles.js" type="text/javascript"></script>
+    <title>Vacatiob Suggester</title>
+  </head>
+
+  <body>
+    <header id="head">
+      <b><i class="big">Don't listen to what they say. Go see</i></b><br>
+      <i>Fill this form and discover your ideal vacation destinations</i>
+    </header>
+    <nav id="nav">
+      <a class="active" href="#home">Home</a>
+      <a href="">Destinations</a>
+      <a href="">Gallery</a>
+      <a href="">Contact Us</a>
+    </nav>
+    <div  id="container">
+      <form id="form">
+        <div  autocomplete="on">
+          <strong>Name:</strong><br>
+          <input id="name" type="text" name="fullName" placeholder="Enter full name" required autofocus/><br>
+          <strong>Country:</strong><br>
+          <input type="text" name="country" placeholder="country of residence" required/><br>
+          <strong>Tel Number:</strong><br>
+          <input type="text" pattern="[+][0-9]{3}[-][0-9]{3}[-][0-9]{6}"  title="follow this format:+256-758-872222"><br>
+          <strong>Email:</strong><br>
+          <input type="Email" name="email address" required/><br>
+        </div><br>
+        <div>Tentative Period of Vacation<br>
+           <input id="period1" type="radio" name="period" value="a" checked>Fall<br>
+           <input id="period2" type="radio" name="period" value="b">Winter<br>
+           <input id="period3" type="radio" name="period" value="c">Summer<br>
+        </div><br>
+        <div>Marital Status<br>
+           <input type="radio" name="status" value="a" checked>Married<br>
+           <input type="radio" name="status" value="b">Single<br>
+           <input type="radio" name="status" value="c">Engaged<br>
+        </div><br>
+        <div>Number of People travelling<br>
+           <input type="radio" name="number" value="a" checked>A couple<br>
+           <input type="radio" name="number" value="b">Less than six<br>
+           <input type="radio" name="number" value="c">More than six<br>
+        </div><br>
+        <div>Type of Accomdation preferred <br>
+           <input id="choice1" type="radio" name="hotel" value="a" checked>Residential<br>
+           <input id="choice2" type="radio" name="hotel" value="b">deluxe<br>
+           <input id="choice3" type="radio" name="hotel" value="c">Resort<br>
+           <input id="choice4" type="radio" name="hotel" value="d">Suite<br>
+           <input id="choice5" type="radio" name="hotel" value="e">Casino<br>
+        </div>
+        <div>
+          <strong>Describe your Travel Plan</strong> <br>
+          <textarea name="Short Profile" rows="4" length="300" cols="80"></textarea>
+        </div>
+        <div id="submit">
+          <input type="submit" name="submit" value="Submit">
+        </div>
+      </form>
+      <div id="display">
+      </div>
+    </div>
+    <footer>Live the Live You Deserve</footer>
+  </body>
+</html>
